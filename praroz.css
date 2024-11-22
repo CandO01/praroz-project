@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(./WhatsApp\ Image\ 2024-11-20\ at\ 11.53.33\ AM.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+.content-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    flex-basis: 20%;
+    gap: 2px;
+}
+
+/* .list-menu .fas{
+    display: none;
+   } */
+.praz{
+    font-size: 30px;
+    font-weight: 700;
+    color:  #fc8004;
+}
+.fa-earth{
+    font-size: 25px;
+    color: #B5C7DA;
+}
+
+.list-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: -100px;
+}
+.list-menu li{
+    display: inline-block;
+    margin-left: 100px;
+}
+.list-menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    max-width: fit-content;
+    cursor: pointer;
+    
+}
+.list-menu li a::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color:  #fc8004;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 1s, font-size 1s;
+}
+.list-menu li a:hover::after{
+    width: 100%;
+}
+.list-menu li a:hover{
+    font-size: 20px;
+    color: #f9c38d;
+}
+.input-tag{
+    display: flex;
+    height: 42px;
+    width: 300px;
+    border: 1px solid  #fc8004;
+    border-radius: 4px;
+    position: relative;
+}
+.textbox{
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0 5px;
+    caret-color: white;
+    color: white;
+}
+.textbox::placeholder{
+    font-size: 16px;
+    color: white;
+}
+.search{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 0 20px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:  #fc8004;
+    color: #fff;
+    cursor: pointer;
+}
+marquee{
+    margin-top: 12px;
+    color: white;
+    font-size: 18px;
+}
+marquee mark{
+    color: white;
+    background-color: #fc8004;
+    padding: 8px;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 6%;
+}
+.web-design{
+    flex-basis: 45%;
+    width: 100%;
+    margin-top:-80px;
+}
+.design{
+    font-size: 78px;
+    color: white;
+    font-weight: bolder;
+}
+.design span{
+    color:  #fc8004;
+    font-weight: bolder;
+}
+.software{
+    color: white;
+    width: 540px;
+    line-height: 28px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.join-us{
+    margin-top: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background-color: #fc8004;
+    cursor: pointer;
+    transition: border 1s, color 1s, opacity 1s;
+}
+.join-us:hover{
+    border: 1px solid white;
+    color: white;
+    opacity: 0.9;
+}
+.login-form{
+    flex-basis: 25%;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+}
+.content-infomation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    row-gap: 30px;
+}
+.login-here, .login-button{
+    width: 100%;
+    padding: 4px 0;
+    border-radius: 6px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fc8004;
+    cursor: pointer;
+    transition: background-color 1s, color 1s;
+}
+.login-here:hover{
+    background-color: #fc8004;
+    color: white;
+}
+.email, .password{
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid #fc8004;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 17px;
+    caret-color: #fc8004;
+    margin-top: 12px;
+    color: white;
+    
+}
+.login-button{
+    background-color: #fc8004;
+    color: black;
+}
+.signup-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+}
+.an-account{
+    font-size: 18px;
+    font-weight: 700;
+}
+.sign-up{
+    margin-top: -10px;
+    font-size: 18px;
+}
+.sign-up span{
+    color: #fc8004;
+    font-size: 18px;
+}
+.login-with{
+    margin-top: 12px;
+    font-size: 18px;
+}
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.fab{
+    font-size: 32px;
+    cursor: pointer;
+}
+.fbk:hover{
+    color: rgb(0, 55, 255);
+}
+.ig:hover{
+    color: red;
+}
+.tweet:hover{
+    color: rgb(0, 132, 255);
+}
+.google:hover{
+    color: rgb(145, 255, 0);
+}
+.skyp:hover{
+    color: rgb(25, 75, 255);
+}
+
+nav .icon-same{
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+  body,html{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./tree2-transformed.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .content-container{
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+  /* nav{
+    position: fixed;
+  } */
+   .praz{
+    font-size: 35px;
+   }
+  nav .icon-same{
+    display: block;
+    color: white;
+    font-size: 25px;
+}
+nav .icon-same:active{
+    color: red;
+}
+ nav .list-menu{
+    background-color: #e78828;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 40px;
+    display: block;
+    z-index: 2;
+    transition: 1s;
+}
+.list-menu li{
+    width: 100%;
+     margin-top: 33px;
+     margin-left: 20px;
+}
+.list-menu li a{
+    font-size: 18px;
+}
+nav .list-menu .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+.login-form{
+   width: 360px;
+   padding: 20px 15px;
+
+ 
+}
+  .content-infomation{
+    width: 100%;
+    padding: 10px;
+  }
+  .input-tag{
+    display: none;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+  }
+  .web-design{
+    margin-bottom: 30px;
+  }
+  .web-design .design{
+    font-size: 30px;
+  }
+  .web-design .software{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .login-here, .login-button{
+    font-size: 24px;
+}
+.login-form{
+  margin-bottom: 20px;
+}
+.fab{
+    font-size: 28px;
+}
+marquee{
+    display: none;
+}
+.join-us{
+    display: flex;
+    margin: 20px auto;
+}
+.icon{
+    justify-content: space-between;
+  
+}
+
+ /* .list-menu{
+    background-color: #fc8004;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+} */
+
+}
